@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body,.header{
+    transition: background-color 1s;
+}
+body::-webkit-scrollbar {
+    width: 0.7em;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: #717674;
+    border-radius: 20px;
+    /* outline: 1px solid slategrey; */
+  }
+/* .overlay{
+    position: absolute;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+.container, .container-fluid{
+    z-index: 0;
+} */
+.dark-mode{
+    background-color: #212529;
+}
+.header{
+    text-align: center;
+    padding: 10px 0;
+    color: #282a35;
+    background-color: #dffcea;
+    margin-bottom: 20px;
+}
+.header h1{
+    margin: 10px 0;
+    font-family: "Rubik", sans-serif;
+}
+
+/********************************************/
+.mode button{
+    width: 50px;
+    color: #212529;
+    transition: width 0.5s;
+    border: none;
+    background-color: #aeedc6;
+    text-align: center;
+}
+.mode button:hover{
+    color: #fff;
+    width: 80px; 
+    background-color: #198754;
+}
+.mode .dark-mode-btn{
+    background-color : #212529; 
+    color: #fff;
+}
+.mode .bi{
+    font-size: 20px;
+}
+/*******************************************/
+.inputs button{
+    font-size: 18px;
+}
+.form-control, .btn{
+    margin: 5px 0;
+}
+.inputs #category{
+    margin-top: 10px;
+}
+#create-btn, #delete-all{
+   width: 100%;
+}
+.btn-search{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.btn-search button{
+    margin: 5px 2px;
+    width: 50%;
+}
+#delete-all{
+    margin: 5px 0;
+}
+span{
+    background-color: #bd4141;
+    padding: 9px;
+    display: block;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.col-lg-3:last-child{
+    padding-top: 6px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+span::before {
+    content: "Total : ";
+}
+
+/*******************************************/
+
+.output .table-white-color{
+    color: #fff;
+}
+.output table{
+    /* color: #282a35; */
+    margin-top: 20px;
+    text-align: center;
+    /* overflow-x:auto; */
+}  
+.output table button{
+    font-size: 14px;
+    padding: 2px 6px;
+}
+
+.output table td{
+    vertical-align: middle; 
+    padding: 2px 4px;
+    /* font-size: 1.2vw; */
+}
+
+/*******************************************************/
+
+@media only screen and (max-width: 767px){
+    .header h1{
+        font-size: 30px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .header h1{
+        font-size: 6vw;
+    }
+}
